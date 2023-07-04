@@ -25,12 +25,10 @@ public class ConnectDB {
                 System.out.println(resultSet.getString("nombres") + " " + resultSet.getString("apellidos"));
             }
 
-
             // Cerrar la conexión
             connection.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        
     }
 }
